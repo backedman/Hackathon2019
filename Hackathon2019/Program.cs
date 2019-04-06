@@ -10,12 +10,20 @@ namespace Hackathon2019
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
-
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            Console.WriteLine("Are you a male or a female?");
+            String gender = Console.ReadLine();
+            if (String.Compare(gender, "male") == 0 || String.Compare(gender, "m") == 0)
+            {
+                Console.WriteLine("What is your shoe size?");
+                decimal x = Convert.ToDecimal(Console.ReadLine());
+                decimal footlength = (decimal)0.33 * x + (decimal)7.35;
+            }
+            if(String.Compare(gender, "female") == 0 || String.Compare(gender, "f") == 0)
+            {
+                Console.WriteLine("What is your shoe size?");
+                decimal x = Convert.ToDecimal(Console.ReadLine());
+                decimal footlength = (decimal)0.33 * x + (decimal)7.35;
+            }
         }
     }
 }
